@@ -1,0 +1,8 @@
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\bin\Debug\Rock.exe.config
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\bin\Debug\Rock.exe
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\bin\Debug\Rock.pdb
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock.Form1.resources
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock.Properties.Resources.resources
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock.csproj.GenerateResource.Cache
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock.exe
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock.pdb
