@@ -1,6 +1,4 @@
 ﻿using System;
-
-
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +10,13 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-
     public partial class Form1 : Form
     {
         double firstNumber;
         double secondNumber;
-        bool isMultiplication = false;
-        bool isSum = false;
-        bool isMinus = false;
-        bool isDivide = false;
-        bool isTavan = false;
-        bool isPercent = false;
-
-
+        bool isMultiplication = false, isSum = false, isMinus = false, isDivide = false, isTavan = false, isPercent = false;
+       
+        /// Handles the click event for number buttons on a calculator.
         private void NumberButton_Click(object sender, EventArgs e)
         {
             Button button = sender as Button;
@@ -33,6 +25,7 @@ namespace Calculator
             else
                 textResultShow.Text += button.Text;
         }
+
         public Form1()
         {
             InitializeComponent();
@@ -46,23 +39,25 @@ namespace Calculator
             btn7.Click += NumberButton_Click;
             btn8.Click += NumberButton_Click;
             btn9.Click += NumberButton_Click;
-            
-
+            btnBaste.Click += btnBaste_Click;
+            btnBaz.Click += btnBaz_Click;
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-        private void button13_Click(object sender, EventArgs e)
+
+        private void HandleDecimalClick(object sender, EventArgs e)
         {
-            if (!textResultShow.Text.Contains(".")) {
+            if (!textResultShow.Text.Contains("."))
+            {
                 if (textResultShow.Text == "")
                     textResultShow.Text = "0.";
                 else
                     textResultShow.Text += ".";
             }
         }
+
         private void btnNegetive_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "")
@@ -78,6 +73,7 @@ namespace Calculator
                 textResultShow.Text = (double.Parse(textResultShow.Text) * -1).ToString();
             }
         }
+
         private void btnDivide_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
@@ -85,6 +81,7 @@ namespace Calculator
             textResultShow.Text = "";
             isDivide = true;
         }
+
         private void btnSum_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
@@ -92,6 +89,7 @@ namespace Calculator
             textResultShow.Text = "";
             isSum = true;
         }
+
         private void btnMinus_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
@@ -100,6 +98,7 @@ namespace Calculator
             isMinus = true;
 
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
@@ -107,6 +106,7 @@ namespace Calculator
             textResultShow.Text = "";
             isTavan = true;
         }
+
         private void btnTan_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
@@ -116,6 +116,7 @@ namespace Calculator
             else
                 textResultShow.Text = Math.Tan(firstNumber * Math.PI / 180).ToString();
         }
+
         private void btnFactorial_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
@@ -138,6 +139,7 @@ namespace Calculator
 
             textResultShow.Text = factorial.ToString();
         }
+
         private void btnLog_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "" || textResultShow.Text == "-") return;
@@ -148,10 +150,16 @@ namespace Calculator
         private void btnTimes_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
-            firstNumber = double.Parse(textResultShow.Text);
+
+            string sanitizedInput = textResultShow.Text.Replace("(", "").Replace(")", "");
+            firstNumber = double.Parse(sanitizedInput);
+
             textResultShow.Clear();
             isMultiplication = true;
+
+
         }
+
         private void btnSqr_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
@@ -159,6 +167,7 @@ namespace Calculator
             textResultShow.Clear();
             textResultShow.Text = Math.Sqrt(firstNumber).ToString();
         }
+
         private void btnPercent_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
@@ -166,59 +175,120 @@ namespace Calculator
             textResultShow.Clear();
             isPercent = true;
         }
+     
+
         private void btnSin_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
+
             double num = double.Parse(textResultShow.Text);
-            textResultShow.Text = Math.Sin(num * Math.PI / 180).ToString();
+
+            if (num % 360 == 180)
+            {
+                textResultShow.Text = "0";
+            }
+            else
+            {
+                textResultShow.Text = Math.Sin(num * Math.PI / 180).ToString();
+            }
         }
+
         private void btnCos_Click(object sender, EventArgs e)
         {
             if (textResultShow.Text == "") return;
+
             double num = double.Parse(textResultShow.Text);
-            textResultShow.Text = Math.Cos(num * Math.PI / 180).ToString();
+
+            if (num % 90 == 0)
+            {
+                if ((num / 90) % 2 == 1)
+                {
+                    textResultShow.Text = "0";
+                }
+                else
+                {
+                    textResultShow.Text = Math.Cos(num * Math.PI / 180).ToString();
+                }
+            }
+            else
+            {
+                textResultShow.Text = Math.Cos(num * Math.PI / 180).ToString();
+            }
         }
+
         private void btnResult_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string sanitizedInput = textResultShow.Text.Replace("(", "").Replace(")", "");
+                secondNumber = double.Parse(sanitizedInput);
 
-            secondNumber = double.Parse(textResultShow.Text);
+                if (isDivide)
+                    textResultShow.Text = (firstNumber / secondNumber).ToString();
 
+                if (isMinus)
+                    textResultShow.Text = (firstNumber - secondNumber).ToString();
 
-            if (isDivide)
-                textResultShow.Text = (firstNumber / secondNumber).ToString();
+                if (isMultiplication)
+                    textResultShow.Text = (firstNumber * secondNumber).ToString();
 
-            if(isMinus)
-                textResultShow.Text = (firstNumber - secondNumber).ToString();
+                if (isTavan)
+                    textResultShow.Text = Math.Pow(firstNumber, secondNumber).ToString();
 
-            if (isMultiplication)
-                textResultShow.Text = (firstNumber * secondNumber).ToString();
+                if (isPercent)
+                    textResultShow.Text = ((firstNumber * secondNumber) / 100).ToString();
 
-            if (isTavan)
-                textResultShow.Text = Math.Pow(firstNumber, secondNumber).ToString();
-            if(isPercent)
-                textResultShow.Text = ((firstNumber * secondNumber) / 100).ToString();
+                else if (isSum)
+                    textResultShow.Text = (firstNumber + secondNumber).ToString();
 
-            else if (isSum)
-                textResultShow.Text = (firstNumber + secondNumber).ToString();
-
-            isMultiplication = false;
-            isSum = false;
-            isMinus = false;
-            isDivide = false;
-            isTavan = false;
-            isPercent = false;
+                isMultiplication = false;
+                isSum = false;
+                isMinus = false;
+                isDivide = false;
+                isTavan = false;
+                isPercent = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("Error: {0}", ex.Message));
+            }
         }
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            textResultShow.Clear();
+            if (!string.IsNullOrEmpty(textResultShow.Text))
+            {
+                textResultShow.Text = textResultShow.Text.Substring(0, textResultShow.Text.Length - 1);
+            }
+
+            if (string.IsNullOrEmpty(textResultShow.Text))
+            {
+                textResultShow.Text = "0";
+            }
+
         }
-
-
-
-
-
-
-
+        private void btnBaste_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textResultShow.Text += ")";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("Error: {0}", ex.Message));
+            }
+        }
+        private void btnBaz_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textResultShow.Text += "(";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("Error: {0}", ex.Message));
+            }
+        }
     }
 }
