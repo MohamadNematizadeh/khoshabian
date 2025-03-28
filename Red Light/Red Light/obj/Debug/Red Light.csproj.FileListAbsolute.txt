@@ -1,0 +1,9 @@
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\bin\Debug\Red Light.exe.config
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\bin\Debug\Red Light.exe
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\bin\Debug\Red Light.pdb
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red Light.csprojResolveAssemblyReference.cache
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red_Light.Form1.resources
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red_Light.Properties.Resources.resources
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red Light.csproj.GenerateResource.Cache
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red Light.exe
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red Light.pdb
