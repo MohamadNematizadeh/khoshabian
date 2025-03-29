@@ -5,5 +5,5 @@ C# projects for Khoshbian Conservatory
 - [ ] Guess the Number
 - [ ] Unit Converter
 - [ ] To-Do List
-- [ ] Traffic Light Simulator
+- [x] Traffic Light Simulator
 - [ ] Rock, Paper, Scissors
