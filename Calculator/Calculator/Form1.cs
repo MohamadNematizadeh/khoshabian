@@ -15,7 +15,7 @@ namespace Calculator
         double firstNumber;
         double secondNumber;
         bool isMultiplication = false, isSum = false, isMinus = false, isDivide = false, isTavan = false, isPercent = false;
-       
+
         /// Handles the click event for number buttons on a calculator.
         private void NumberButton_Click(object sender, EventArgs e)
         {
@@ -25,6 +25,8 @@ namespace Calculator
             else
                 textResultShow.Text += button.Text;
         }
+
+
 
         public Form1()
         {
@@ -41,6 +43,8 @@ namespace Calculator
             btn9.Click += NumberButton_Click;
             btnBaste.Click += btnBaste_Click;
             btnBaz.Click += btnBaz_Click;
+            textResultShow.KeyDown += KeyBackspace;
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -175,7 +179,7 @@ namespace Calculator
             textResultShow.Clear();
             isPercent = true;
         }
-     
+
 
         private void btnSin_Click(object sender, EventArgs e)
         {
@@ -223,24 +227,43 @@ namespace Calculator
                 string sanitizedInput = textResultShow.Text.Replace("(", "").Replace(")", "");
                 secondNumber = double.Parse(sanitizedInput);
 
+                double result = 0;
+                string operation = "";
+
                 if (isDivide)
-                    textResultShow.Text = (firstNumber / secondNumber).ToString();
-
+                {
+                    result = firstNumber / secondNumber;
+                    operation = string.Format("{0} / {1}", firstNumber, secondNumber);
+                }
                 if (isMinus)
-                    textResultShow.Text = (firstNumber - secondNumber).ToString();
-
+                {
+                    result = firstNumber - secondNumber;
+                    operation = string.Format("{0} - {1}", firstNumber, secondNumber);
+                }
                 if (isMultiplication)
-                    textResultShow.Text = (firstNumber * secondNumber).ToString();
-
+                {
+                    result = firstNumber * secondNumber;
+                    operation = string.Format("{0} * {1}", firstNumber, secondNumber);
+                }
                 if (isTavan)
-                    textResultShow.Text = Math.Pow(firstNumber, secondNumber).ToString();
-
+                {
+                    result = Math.Pow(firstNumber, secondNumber);
+                    operation = string.Format("{0} ^ {1}", firstNumber, secondNumber);
+                }
                 if (isPercent)
-                    textResultShow.Text = ((firstNumber * secondNumber) / 100).ToString();
-
+                {
+                    result = (firstNumber * secondNumber) / 100;
+                    operation = string.Format("{0} % {1}", firstNumber, secondNumber);
+                }
                 else if (isSum)
-                    textResultShow.Text = (firstNumber + secondNumber).ToString();
+                {
+                    result = firstNumber + secondNumber;
+                    operation = string.Format("{0} + {1}", firstNumber, secondNumber);
+                }
 
+                textResultShow.Text = result.ToString();
+
+                labelResult.Text = string.Format("{0} = ", operation, result);
                 isMultiplication = false;
                 isSum = false;
                 isMinus = false;
@@ -255,17 +278,13 @@ namespace Calculator
         }
 
 
+
+
         private void btnClear_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textResultShow.Text))
-            {
-                textResultShow.Text = textResultShow.Text.Substring(0, textResultShow.Text.Length - 1);
-            }
+            textResultShow.Clear();
+            labelResult.Text = "";
 
-            if (string.IsNullOrEmpty(textResultShow.Text))
-            {
-                textResultShow.Text = "0";
-            }
 
         }
         private void btnBaste_Click(object sender, EventArgs e)
@@ -290,5 +309,19 @@ namespace Calculator
                 MessageBox.Show(string.Format("Error: {0}", ex.Message));
             }
         }
+
+        private void KeyBackspace(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Back)
+            {
+                if (!string.IsNullOrEmpty(textResultShow.Text))
+                {
+                    textResultShow.Text = textResultShow.Text.Substring(0, textResultShow.Text.Length - 1);
+                }
+                e.SuppressKeyPress = true;
+            }
+        }
+
+
     }
 }

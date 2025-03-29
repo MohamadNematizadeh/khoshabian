@@ -25,6 +25,9 @@ namespace Unit_Convertor
         {
             cmbUnitSelection.DrawMode = DrawMode.OwnerDrawFixed;
             cmbUnitSelection.BackColor = Color.LightSkyBlue;
+            cmbUnit1.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            cmbUnit1.FlatStyle = FlatStyle.Flat;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -48,6 +51,11 @@ namespace Unit_Convertor
         }
 
         private void cmbUnit2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbUnitSelection_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

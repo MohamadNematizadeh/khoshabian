@@ -7,3 +7,12 @@ C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red Light.csproj.GenerateResource.Cache
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red Light.exe
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Red Light\Red Light\obj\Debug\Red Light.pdb
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\bin\Debug\Red Light.exe.config
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\obj\Debug\Red Light.exe
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\obj\Debug\Red Light.pdb
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\bin\Debug\Red Light.exe
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\bin\Debug\Red Light.pdb
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\obj\Debug\Red Light.csprojResolveAssemblyReference.cache
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\obj\Debug\Red_Light.Form1.resources
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\obj\Debug\Red_Light.Properties.Resources.resources
+D:\Programmer\C# Course\khoshabian\Red Light\Red Light\obj\Debug\Red Light.csproj.GenerateResource.Cache

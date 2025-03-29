@@ -58,22 +58,22 @@
             this.btnTan = new System.Windows.Forms.Button();
             this.btnBaz = new System.Windows.Forms.Button();
             this.btnBaste = new System.Windows.Forms.Button();
+            this.labelResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textResultShow
             // 
+            this.textResultShow.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textResultShow.BackColor = System.Drawing.Color.Black;
-            this.textResultShow.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textResultShow.Dock = System.Windows.Forms.DockStyle.Top;
             this.textResultShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textResultShow.ForeColor = System.Drawing.Color.White;
-            this.textResultShow.Location = new System.Drawing.Point(0, 0);
+            this.textResultShow.Location = new System.Drawing.Point(0, 32);
             this.textResultShow.Margin = new System.Windows.Forms.Padding(4);
             this.textResultShow.Multiline = true;
             this.textResultShow.Name = "textResultShow";
-            this.textResultShow.ReadOnly = true;
-            this.textResultShow.Size = new System.Drawing.Size(447, 47);
+            this.textResultShow.Size = new System.Drawing.Size(447, 51);
             this.textResultShow.TabIndex = 0;
+            this.textResultShow.UseWaitCursor = true;
             // 
             // btn1
             // 
@@ -81,7 +81,7 @@
             this.btn1.FlatAppearance.BorderSize = 0;
             this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(305, 343);
+            this.btn1.Location = new System.Drawing.Point(307, 363);
             this.btn1.Margin = new System.Windows.Forms.Padding(4);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(64, 59);
@@ -95,7 +95,7 @@
             this.btn2.FlatAppearance.BorderSize = 0;
             this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(232, 343);
+            this.btn2.Location = new System.Drawing.Point(234, 363);
             this.btn2.Margin = new System.Windows.Forms.Padding(4);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(64, 59);
@@ -109,7 +109,7 @@
             this.btn3.FlatAppearance.BorderSize = 0;
             this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(160, 343);
+            this.btn3.Location = new System.Drawing.Point(162, 363);
             this.btn3.Margin = new System.Windows.Forms.Padding(4);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(64, 59);
@@ -123,7 +123,7 @@
             this.btn4.FlatAppearance.BorderSize = 0;
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(305, 277);
+            this.btn4.Location = new System.Drawing.Point(307, 297);
             this.btn4.Margin = new System.Windows.Forms.Padding(4);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(64, 59);
@@ -137,7 +137,7 @@
             this.btn5.FlatAppearance.BorderSize = 0;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(232, 277);
+            this.btn5.Location = new System.Drawing.Point(234, 297);
             this.btn5.Margin = new System.Windows.Forms.Padding(4);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(64, 59);
@@ -151,7 +151,7 @@
             this.btn6.FlatAppearance.BorderSize = 0;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(161, 277);
+            this.btn6.Location = new System.Drawing.Point(163, 297);
             this.btn6.Margin = new System.Windows.Forms.Padding(4);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(64, 59);
@@ -165,7 +165,7 @@
             this.btn7.FlatAppearance.BorderSize = 0;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(305, 210);
+            this.btn7.Location = new System.Drawing.Point(307, 230);
             this.btn7.Margin = new System.Windows.Forms.Padding(4);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(64, 59);
@@ -179,7 +179,7 @@
             this.btn8.FlatAppearance.BorderSize = 0;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(232, 210);
+            this.btn8.Location = new System.Drawing.Point(234, 230);
             this.btn8.Margin = new System.Windows.Forms.Padding(4);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(64, 59);
@@ -193,7 +193,7 @@
             this.btn9.FlatAppearance.BorderSize = 0;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(161, 210);
+            this.btn9.Location = new System.Drawing.Point(163, 230);
             this.btn9.Margin = new System.Windows.Forms.Padding(4);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(64, 59);
@@ -207,7 +207,7 @@
             this.btnMinus.FlatAppearance.BorderSize = 0;
             this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinus.Location = new System.Drawing.Point(0, 343);
+            this.btnMinus.Location = new System.Drawing.Point(2, 363);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(153, 59);
@@ -222,7 +222,7 @@
             this.btnResult.FlatAppearance.BorderSize = 0;
             this.btnResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResult.Location = new System.Drawing.Point(160, 410);
+            this.btnResult.Location = new System.Drawing.Point(162, 430);
             this.btnResult.Margin = new System.Windows.Forms.Padding(4);
             this.btnResult.Name = "btnResult";
             this.btnResult.Size = new System.Drawing.Size(64, 59);
@@ -237,7 +237,7 @@
             this.btn0.FlatAppearance.BorderSize = 0;
             this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.Location = new System.Drawing.Point(233, 410);
+            this.btn0.Location = new System.Drawing.Point(235, 430);
             this.btn0.Margin = new System.Windows.Forms.Padding(4);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(64, 59);
@@ -251,7 +251,7 @@
             this.button13.FlatAppearance.BorderSize = 0;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(305, 410);
+            this.button13.Location = new System.Drawing.Point(307, 430);
             this.button13.Margin = new System.Windows.Forms.Padding(4);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(64, 59);
@@ -266,7 +266,7 @@
             this.btnSum.FlatAppearance.BorderSize = 0;
             this.btnSum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSum.Location = new System.Drawing.Point(0, 410);
+            this.btnSum.Location = new System.Drawing.Point(2, 430);
             this.btnSum.Margin = new System.Windows.Forms.Padding(4);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(153, 59);
@@ -281,7 +281,7 @@
             this.btnTavan.FlatAppearance.BorderSize = 0;
             this.btnTavan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTavan.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTavan.Location = new System.Drawing.Point(0, 144);
+            this.btnTavan.Location = new System.Drawing.Point(2, 164);
             this.btnTavan.Margin = new System.Windows.Forms.Padding(4);
             this.btnTavan.Name = "btnTavan";
             this.btnTavan.Size = new System.Drawing.Size(153, 59);
@@ -296,7 +296,7 @@
             this.btnFactorial.FlatAppearance.BorderSize = 0;
             this.btnFactorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFactorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFactorial.Location = new System.Drawing.Point(0, 78);
+            this.btnFactorial.Location = new System.Drawing.Point(2, 98);
             this.btnFactorial.Margin = new System.Windows.Forms.Padding(4);
             this.btnFactorial.Name = "btnFactorial";
             this.btnFactorial.Size = new System.Drawing.Size(153, 59);
@@ -312,7 +312,7 @@
             this.btnTimes.FlatAppearance.BorderSize = 0;
             this.btnTimes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimes.Location = new System.Drawing.Point(0, 210);
+            this.btnTimes.Location = new System.Drawing.Point(2, 230);
             this.btnTimes.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimes.Name = "btnTimes";
             this.btnTimes.Size = new System.Drawing.Size(153, 59);
@@ -327,7 +327,7 @@
             this.btnDivide.FlatAppearance.BorderSize = 0;
             this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivide.Location = new System.Drawing.Point(0, 277);
+            this.btnDivide.Location = new System.Drawing.Point(2, 297);
             this.btnDivide.Margin = new System.Windows.Forms.Padding(4);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(153, 59);
@@ -342,7 +342,7 @@
             this.btnSqr.FlatAppearance.BorderSize = 0;
             this.btnSqr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSqr.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSqr.Location = new System.Drawing.Point(161, 144);
+            this.btnSqr.Location = new System.Drawing.Point(163, 164);
             this.btnSqr.Margin = new System.Windows.Forms.Padding(4);
             this.btnSqr.Name = "btnSqr";
             this.btnSqr.Size = new System.Drawing.Size(135, 59);
@@ -357,7 +357,7 @@
             this.btnPercent.FlatAppearance.BorderSize = 0;
             this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPercent.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPercent.Location = new System.Drawing.Point(161, 78);
+            this.btnPercent.Location = new System.Drawing.Point(163, 98);
             this.btnPercent.Margin = new System.Windows.Forms.Padding(4);
             this.btnPercent.Name = "btnPercent";
             this.btnPercent.Size = new System.Drawing.Size(136, 59);
@@ -372,7 +372,7 @@
             this.btnLog.FlatAppearance.BorderSize = 0;
             this.btnLog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLog.Location = new System.Drawing.Point(305, 78);
+            this.btnLog.Location = new System.Drawing.Point(307, 98);
             this.btnLog.Margin = new System.Windows.Forms.Padding(4);
             this.btnLog.Name = "btnLog";
             this.btnLog.Size = new System.Drawing.Size(64, 59);
@@ -387,7 +387,7 @@
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(305, 144);
+            this.btnClear.Location = new System.Drawing.Point(307, 164);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(64, 58);
@@ -402,7 +402,7 @@
             this.btnNegetive.FlatAppearance.BorderSize = 0;
             this.btnNegetive.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNegetive.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNegetive.Location = new System.Drawing.Point(377, 410);
+            this.btnNegetive.Location = new System.Drawing.Point(379, 430);
             this.btnNegetive.Margin = new System.Windows.Forms.Padding(4);
             this.btnNegetive.Name = "btnNegetive";
             this.btnNegetive.Size = new System.Drawing.Size(64, 59);
@@ -417,7 +417,7 @@
             this.btnSin.FlatAppearance.BorderSize = 0;
             this.btnSin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSin.Location = new System.Drawing.Point(377, 343);
+            this.btnSin.Location = new System.Drawing.Point(379, 363);
             this.btnSin.Margin = new System.Windows.Forms.Padding(4);
             this.btnSin.Name = "btnSin";
             this.btnSin.Size = new System.Drawing.Size(64, 59);
@@ -432,7 +432,7 @@
             this.btnCos.FlatAppearance.BorderSize = 0;
             this.btnCos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCos.Location = new System.Drawing.Point(377, 277);
+            this.btnCos.Location = new System.Drawing.Point(379, 297);
             this.btnCos.Margin = new System.Windows.Forms.Padding(4);
             this.btnCos.Name = "btnCos";
             this.btnCos.Size = new System.Drawing.Size(64, 59);
@@ -447,7 +447,7 @@
             this.btnTan.FlatAppearance.BorderSize = 0;
             this.btnTan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTan.Location = new System.Drawing.Point(377, 210);
+            this.btnTan.Location = new System.Drawing.Point(379, 230);
             this.btnTan.Margin = new System.Windows.Forms.Padding(4);
             this.btnTan.Name = "btnTan";
             this.btnTan.Size = new System.Drawing.Size(64, 58);
@@ -462,7 +462,7 @@
             this.btnBaz.FlatAppearance.BorderSize = 0;
             this.btnBaz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaz.Location = new System.Drawing.Point(377, 144);
+            this.btnBaz.Location = new System.Drawing.Point(379, 164);
             this.btnBaz.Margin = new System.Windows.Forms.Padding(4);
             this.btnBaz.Name = "btnBaz";
             this.btnBaz.Size = new System.Drawing.Size(64, 59);
@@ -477,7 +477,7 @@
             this.btnBaste.FlatAppearance.BorderSize = 0;
             this.btnBaste.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaste.Location = new System.Drawing.Point(377, 78);
+            this.btnBaste.Location = new System.Drawing.Point(379, 98);
             this.btnBaste.Margin = new System.Windows.Forms.Padding(4);
             this.btnBaste.Name = "btnBaste";
             this.btnBaste.Size = new System.Drawing.Size(64, 59);
@@ -485,12 +485,23 @@
             this.btnBaste.Text = ")";
             this.btnBaste.UseVisualStyleBackColor = false;
             // 
+            // labelResult
+            // 
+            this.labelResult.AutoSize = true;
+            this.labelResult.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResult.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelResult.Location = new System.Drawing.Point(371, 3);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(0, 27);
+            this.labelResult.TabIndex = 30;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(447, 474);
+            this.ClientSize = new System.Drawing.Size(447, 500);
+            this.Controls.Add(this.labelResult);
             this.Controls.Add(this.btnBaste);
             this.Controls.Add(this.btnBaz);
             this.Controls.Add(this.btnTan);
@@ -562,6 +573,7 @@
         private System.Windows.Forms.Button btnTan;
         private System.Windows.Forms.Button btnBaz;
         private System.Windows.Forms.Button btnBaste;
+        private System.Windows.Forms.Label labelResult;
     }
 }
 

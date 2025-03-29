@@ -1,63 +1,109 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Red_Light
 {
     public partial class Form1 : Form
     {
+        private Timer timer;
+        private Timer carTimer;
+        private int lightIndex = 0;
+        private bool isRunning = false;
+
         public Form1()
         {
             InitializeComponent();
-         
-            RedLight.Region = new Region(new System.Drawing.Drawing2D.GraphicsPath());
-            var pathRed = new System.Drawing.Drawing2D.GraphicsPath();
-            pathRed.AddEllipse(0, 0, RedLight.Width, RedLight.Height);
-            RedLight.Region = new Region(pathRed);
-
-            OrangeLight.Region = new Region(new System.Drawing.Drawing2D.GraphicsPath());
-            var pathOrange = new System.Drawing.Drawing2D.GraphicsPath();
-            pathOrange.AddEllipse(0, 0, OrangeLight.Width, OrangeLight.Height);
-            OrangeLight.Region = new Region(pathOrange);
-
-            GreenLight.Region = new Region(new System.Drawing.Drawing2D.GraphicsPath());
-            var pathGreen = new System.Drawing.Drawing2D.GraphicsPath();
-            pathGreen.AddEllipse(0, 0, GreenLight.Width, GreenLight.Height);
-            GreenLight.Region = new Region(pathGreen);
+            InitializeTrafficLights();
+            InitializeTimer();
+            InitializeCarMovement();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void InitializeTrafficLights()
         {
-
+            RedLight.BackColor = Color.Red;
+            OrangeLight.BackColor = Color.Gray;
+            GreenLight.BackColor = Color.Gray;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void InitializeTimer()
         {
-
+            timer = new Timer();
+            timer.Interval = 2000; 
+            timer.Tick += Timer_Tick;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void InitializeCarMovement()
         {
-
+            carTimer = new Timer();
+            carTimer.Interval = 100;
+            carTimer.Tick += CarTimer_Tick;
         }
 
-        private void RedLight_Click(object sender, EventArgs e)
+        private void Timer_Tick(object sender, EventArgs e)
         {
+            switch (lightIndex)
+            {
+                case 0: 
+                    RedLight.BackColor = Color.Gray;
+                    OrangeLight.BackColor = Color.Orange;
+                    GreenLight.BackColor = Color.Gray;
+                    break;
+                case 1: 
+                    RedLight.BackColor = Color.Gray;
+                    OrangeLight.BackColor = Color.Gray;
+                    GreenLight.BackColor = Color.Green;
+                    break;
+                case 2: 
+                    RedLight.BackColor = Color.Red;
+                    OrangeLight.BackColor = Color.Gray;
+                    GreenLight.BackColor = Color.Gray;
+                    break;
+            }
+            lightIndex = (lightIndex + 1) % 3;
 
+            if (GreenLight.BackColor == Color.Green)
+            {
+                carTimer.Start();
+            }
+            else
+            {
+                carTimer.Stop();
+            }
         }
+
+        private void CarTimer_Tick(object sender, EventArgs e)
+        {
+            if (Car.Left < this.Width - Car.Width)
+            {
+                Car.Left += 5; 
+            }
+            else
+            {
+                Car.Left = 0; 
+            }
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            if (!isRunning)
+            {
+                timer.Start();
+                isRunning = true;
+            }
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            timer.Stop();
+            carTimer.Stop();
+            isRunning = false;
+        }
+       
 
         private void btnReset_Click(object sender, EventArgs e)
         {
 
         }
-
-
-
     }
 }

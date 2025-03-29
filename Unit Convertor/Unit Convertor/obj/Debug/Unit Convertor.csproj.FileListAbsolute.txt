@@ -7,3 +7,12 @@ C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit Convertor\Unit Conv
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit Convertor\Unit Convertor\obj\Debug\Unit Convertor.csproj.GenerateResource.Cache
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit Convertor\Unit Convertor\obj\Debug\Unit Convertor.exe
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit Convertor\Unit Convertor\obj\Debug\Unit Convertor.pdb
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\bin\Debug\Unit Convertor.exe.config
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\obj\Debug\Unit Convertor.exe
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\obj\Debug\Unit Convertor.pdb
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\bin\Debug\Unit Convertor.exe
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\bin\Debug\Unit Convertor.pdb
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\obj\Debug\Unit Convertor.csprojResolveAssemblyReference.cache
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\obj\Debug\Unit_Convertor.Form1.resources
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\obj\Debug\Unit_Convertor.Properties.Resources.resources
+D:\Programmer\C# Course\khoshabian\Unit Convertor\Unit Convertor\obj\Debug\Unit Convertor.csproj.GenerateResource.Cache
