@@ -101,7 +101,6 @@ namespace Guess_the_Number
             Random rendom = new Random();
             computerrandom = rendom.Next(1, 100);
             MessageBox.Show("Start new game");
-            MessageBox.Show("" + computerrandom);
             attempts = 0; 
             btnStart.Enabled = false;
         }
