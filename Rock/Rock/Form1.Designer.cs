@@ -28,121 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnPlayAgain = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btnPaper = new System.Windows.Forms.Button();
-            this.btnRock = new System.Windows.Forms.Button();
-            this.btnScissor = new System.Windows.Forms.Button();
+            this.paper = new System.Windows.Forms.Button();
+            this.scissors = new System.Windows.Forms.Button();
+            this.rock = new System.Windows.Forms.Button();
+            this.player = new System.Windows.Forms.Button();
+            this.Computer = new System.Windows.Forms.Button();
+            this.computer_scor = new System.Windows.Forms.Label();
+            this.player_scor = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.Violet;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.textBox3.Location = new System.Drawing.Point(94, 160);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 15;
-            this.textBox3.Text = "Time Left:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Violet;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.textBox2.Location = new System.Drawing.Point(62, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 20);
-            this.textBox2.TabIndex = 14;
-            this.textBox2.Text = "Choose Your Weapon!";
             // 
             // btnPlayAgain
             // 
-            this.btnPlayAgain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnPlayAgain.BackColor = System.Drawing.Color.White;
             this.btnPlayAgain.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPlayAgain.ForeColor = System.Drawing.Color.White;
-            this.btnPlayAgain.Location = new System.Drawing.Point(94, 230);
+            this.btnPlayAgain.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnPlayAgain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPlayAgain.Location = new System.Drawing.Point(24, 443);
+            this.btnPlayAgain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPlayAgain.Name = "btnPlayAgain";
-            this.btnPlayAgain.Size = new System.Drawing.Size(101, 23);
+            this.btnPlayAgain.Size = new System.Drawing.Size(254, 38);
             this.btnPlayAgain.TabIndex = 13;
             this.btnPlayAgain.Text = "Play Again!";
             this.btnPlayAgain.UseVisualStyleBackColor = false;
+            this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
             // 
-            // textBox1
+            // paper
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Violet;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Purple;
-            this.textBox1.Location = new System.Drawing.Point(6, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(273, 31);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "Rock Paper Scissors";
+            this.paper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.paper.Image = global::Rock.Properties.Resources.paper;
+            this.paper.Location = new System.Drawing.Point(115, 366);
+            this.paper.Margin = new System.Windows.Forms.Padding(4);
+            this.paper.Name = "paper";
+            this.paper.Size = new System.Drawing.Size(73, 68);
+            this.paper.TabIndex = 12;
+            this.paper.UseVisualStyleBackColor = true;
+            this.paper.Click += new System.EventHandler(this.paper_Click);
             // 
-            // textBox4
+            // scissors
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Violet;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(95, 204);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 16;
-            this.textBox4.Text = "Your Score:";
+            this.scissors.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.scissors.Image = global::Rock.Properties.Resources.scissors;
+            this.scissors.Location = new System.Drawing.Point(24, 366);
+            this.scissors.Margin = new System.Windows.Forms.Padding(4);
+            this.scissors.Name = "scissors";
+            this.scissors.Size = new System.Drawing.Size(73, 68);
+            this.scissors.TabIndex = 11;
+            this.scissors.UseVisualStyleBackColor = true;
+            this.scissors.Click += new System.EventHandler(this.scissors_Click);
             // 
-            // btnPaper
+            // rock
             // 
-            this.btnPaper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaper.Image = global::Rock.Properties.Resources.Screenshot_2025_03_17_155437;
-            this.btnPaper.Location = new System.Drawing.Point(111, 57);
-            this.btnPaper.Name = "btnPaper";
-            this.btnPaper.Size = new System.Drawing.Size(55, 55);
-            this.btnPaper.TabIndex = 12;
-            this.btnPaper.UseVisualStyleBackColor = true;
+            this.rock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rock.Image = global::Rock.Properties.Resources.rock;
+            this.rock.Location = new System.Drawing.Point(205, 366);
+            this.rock.Margin = new System.Windows.Forms.Padding(4);
+            this.rock.Name = "rock";
+            this.rock.Size = new System.Drawing.Size(73, 68);
+            this.rock.TabIndex = 10;
+            this.rock.UseVisualStyleBackColor = true;
+            this.rock.Click += new System.EventHandler(this.rock_Click_1);
             // 
-            // btnRock
+            // player
             // 
-            this.btnRock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRock.Image = global::Rock.Properties.Resources.Screenshot_2025_03_17_154848;
-            this.btnRock.Location = new System.Drawing.Point(6, 57);
-            this.btnRock.Name = "btnRock";
-            this.btnRock.Size = new System.Drawing.Size(55, 55);
-            this.btnRock.TabIndex = 11;
-            this.btnRock.UseVisualStyleBackColor = true;
+            this.player.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.player.Location = new System.Drawing.Point(82, 182);
+            this.player.Margin = new System.Windows.Forms.Padding(4);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(122, 122);
+            this.player.TabIndex = 17;
+            this.player.UseVisualStyleBackColor = true;
             // 
-            // btnScissor
+            // Computer
             // 
-            this.btnScissor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnScissor.Image = global::Rock.Properties.Resources.Screenshot_2025_03_17_174449;
-            this.btnScissor.Location = new System.Drawing.Point(224, 57);
-            this.btnScissor.Name = "btnScissor";
-            this.btnScissor.Size = new System.Drawing.Size(55, 55);
-            this.btnScissor.TabIndex = 10;
-            this.btnScissor.UseVisualStyleBackColor = true;
+            this.Computer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Computer.Location = new System.Drawing.Point(82, 52);
+            this.Computer.Margin = new System.Windows.Forms.Padding(4);
+            this.Computer.Name = "Computer";
+            this.Computer.Size = new System.Drawing.Size(122, 122);
+            this.Computer.TabIndex = 18;
+            this.Computer.UseVisualStyleBackColor = true;
+            // 
+            // computer_scor
+            // 
+            this.computer_scor.AutoSize = true;
+            this.computer_scor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.computer_scor.ForeColor = System.Drawing.Color.White;
+            this.computer_scor.Location = new System.Drawing.Point(70, 9);
+            this.computer_scor.Name = "computer_scor";
+            this.computer_scor.Size = new System.Drawing.Size(147, 32);
+            this.computer_scor.TabIndex = 19;
+            this.computer_scor.Text = "Computer";
+            // 
+            // player_scor
+            // 
+            this.player_scor.AutoSize = true;
+            this.player_scor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.player_scor.ForeColor = System.Drawing.Color.White;
+            this.player_scor.Location = new System.Drawing.Point(85, 318);
+            this.player_scor.Name = "player_scor";
+            this.player_scor.Size = new System.Drawing.Size(102, 32);
+            this.player_scor.TabIndex = 20;
+            this.player_scor.Text = "Player";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Violet;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(300, 494);
+            this.Controls.Add(this.player_scor);
+            this.Controls.Add(this.computer_scor);
+            this.Controls.Add(this.Computer);
+            this.Controls.Add(this.player);
             this.Controls.Add(this.btnPlayAgain);
-            this.Controls.Add(this.btnPaper);
-            this.Controls.Add(this.btnRock);
-            this.Controls.Add(this.btnScissor);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.paper);
+            this.Controls.Add(this.scissors);
+            this.Controls.Add(this.rock);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -152,14 +156,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnPlayAgain;
-        private System.Windows.Forms.Button btnPaper;
-        private System.Windows.Forms.Button btnRock;
-        private System.Windows.Forms.Button btnScissor;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button paper;
+        private System.Windows.Forms.Button scissors;
+        private System.Windows.Forms.Button rock;
+        private System.Windows.Forms.Button player;
+        private System.Windows.Forms.Button Computer;
+        private System.Windows.Forms.Label computer_scor;
+        private System.Windows.Forms.Label player_scor;
     }
 }
 

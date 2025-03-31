@@ -6,3 +6,12 @@ C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock.csproj.GenerateResource.Cache
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock.exe
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Rock\Rock\obj\Debug\Rock.pdb
+D:\Programmer\C# Course\khoshabian\Rock\Rock\bin\Debug\Rock.exe.config
+D:\Programmer\C# Course\khoshabian\Rock\Rock\obj\Debug\Rock.exe
+D:\Programmer\C# Course\khoshabian\Rock\Rock\obj\Debug\Rock.pdb
+D:\Programmer\C# Course\khoshabian\Rock\Rock\bin\Debug\Rock.exe
+D:\Programmer\C# Course\khoshabian\Rock\Rock\bin\Debug\Rock.pdb
+D:\Programmer\C# Course\khoshabian\Rock\Rock\obj\Debug\Rock.Form1.resources
+D:\Programmer\C# Course\khoshabian\Rock\Rock\obj\Debug\Rock.Properties.Resources.resources
+D:\Programmer\C# Course\khoshabian\Rock\Rock\obj\Debug\Rock.csproj.GenerateResource.Cache
+D:\Programmer\C# Course\khoshabian\Rock\Rock\obj\Debug\Rock.csprojResolveAssemblyReference.cache

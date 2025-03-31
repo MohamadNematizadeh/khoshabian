@@ -28,119 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cmbUnit1 = new System.Windows.Forms.ComboBox();
-            this.cmbUnit2 = new System.Windows.Forms.ComboBox();
-            this.txtOutput = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.cmbUnitSelection = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.cmbUnitSelection = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // cmbUnit1
-            // 
-            this.cmbUnit1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.cmbUnit1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbUnit1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbUnit1.FormattingEnabled = true;
-            this.cmbUnit1.Location = new System.Drawing.Point(315, 137);
-            this.cmbUnit1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbUnit1.Name = "cmbUnit1";
-            this.cmbUnit1.Size = new System.Drawing.Size(123, 24);
-            this.cmbUnit1.TabIndex = 0;
-            this.cmbUnit1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // cmbUnit2
-            // 
-            this.cmbUnit2.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.cmbUnit2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbUnit2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbUnit2.FormattingEnabled = true;
-            this.cmbUnit2.Location = new System.Drawing.Point(313, 87);
-            this.cmbUnit2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbUnit2.Name = "cmbUnit2";
-            this.cmbUnit2.Size = new System.Drawing.Size(123, 24);
-            this.cmbUnit2.TabIndex = 5;
-            this.cmbUnit2.SelectedIndexChanged += new System.EventHandler(this.cmbUnit2_SelectedIndexChanged);
-            // 
-            // txtOutput
-            // 
-            this.txtOutput.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.txtOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOutput.Location = new System.Drawing.Point(88, 85);
-            this.txtOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtOutput.Multiline = true;
-            this.txtOutput.Name = "txtOutput";
-            this.txtOutput.Size = new System.Drawing.Size(167, 26);
-            this.txtOutput.TabIndex = 6;
-            this.txtOutput.TextChanged += new System.EventHandler(this.txtOutput_TextChanged);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(313, 223);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 49);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Switch";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.cmbUnitSelection);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.cmbUnit1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(453, 247);
-            this.panel1.TabIndex = 10;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(4, 52);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(133, 33);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "Choose Your Unit";
-            // 
-            // cmbUnitSelection
-            // 
-            this.cmbUnitSelection.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.cmbUnitSelection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbUnitSelection.Items.AddRange(new object[] {
-            "Temperature",
-            "Length",
-            "Mass"});
-            this.cmbUnitSelection.Location = new System.Drawing.Point(139, 52);
-            this.cmbUnitSelection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cmbUnitSelection.Name = "cmbUnitSelection";
-            this.cmbUnitSelection.Size = new System.Drawing.Size(160, 24);
-            this.cmbUnitSelection.TabIndex = 8;
-            this.cmbUnitSelection.SelectedIndexChanged += new System.EventHandler(this.cmbUnitSelection_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -148,96 +45,154 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(349, 15);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(356, -3);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 8;
             this.button2.Text = "Dark Mode";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // panel4
+            // cmbUnitSelection
             // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Location = new System.Drawing.Point(88, 135);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(167, 28);
-            this.panel4.TabIndex = 7;
+            this.cmbUnitSelection.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
+            this.cmbUnitSelection.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbUnitSelection.Items.AddRange(new object[] {
+            "Temperature",
+            "Length",
+            "Mass"});
+            this.cmbUnitSelection.Location = new System.Drawing.Point(74, 65);
+            this.cmbUnitSelection.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbUnitSelection.Name = "cmbUnitSelection";
+            this.cmbUnitSelection.Size = new System.Drawing.Size(248, 24);
+            this.cmbUnitSelection.TabIndex = 8;
+            this.cmbUnitSelection.SelectedIndexChanged += new System.EventHandler(this.cmbUnitSelection_SelectedIndexChanged);
             // 
-            // textBox2
+            // label1
             // 
-            this.textBox2.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 26);
-            this.textBox2.TabIndex = 8;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.label1.Location = new System.Drawing.Point(330, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 29);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Quantity";
             // 
-            // panel2
+            // label2
             // 
-            this.panel2.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.panel2.Controls.Add(this.txtOutput);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.cmbUnit2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 239);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(453, 245);
-            this.panel2.TabIndex = 11;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.label2.Location = new System.Drawing.Point(330, 124);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 29);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Amount";
             // 
-            // panel3
+            // comboBox1
             // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(88, 85);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(167, 28);
-            this.panel3.TabIndex = 0;
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Temperature",
+            "Length",
+            "Mass"});
+            this.comboBox1.Location = new System.Drawing.Point(74, 124);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(248, 24);
+            this.comboBox1.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.label3.Location = new System.Drawing.Point(330, 186);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 24);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "convert from";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Temperature",
+            "Length",
+            "Mass"});
+            this.comboBox2.Location = new System.Drawing.Point(74, 186);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(248, 24);
+            this.comboBox2.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            this.label4.Location = new System.Drawing.Point(330, 248);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 29);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "turn into";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
+            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Temperature",
+            "Length",
+            "Mass"});
+            this.comboBox3.Location = new System.Drawing.Point(74, 248);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(248, 24);
+            this.comboBox3.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(453, 484);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.cmbUnitSelection);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Unit Convertor";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cmbUnit1;
-        private System.Windows.Forms.ComboBox cmbUnit2;
-        private System.Windows.Forms.TextBox txtOutput;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox cmbUnitSelection;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBox3;
+
+        
+
     }
 }
 

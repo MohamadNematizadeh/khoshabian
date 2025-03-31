@@ -15,10 +15,9 @@ namespace Unit_Convertor
         public Form1()
         {
             InitializeComponent();
-            panel1.Margin = new Padding(0);
-            panel1.Padding = new Padding(0);
-            cmbUnitSelection.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbUnitSelection.FlatStyle = FlatStyle.Flat;
+
+
+       
 
         }
         private void Form1_Load(object sender, EventArgs e)
