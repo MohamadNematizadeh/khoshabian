@@ -1,0 +1,9 @@
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\bin\Debug\MainHall.exe.config
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\bin\Debug\MainHall.exe
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\bin\Debug\MainHall.pdb
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.csprojResolveAssemblyReference.cache
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.Form1.resources
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.Properties.Resources.resources
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.csproj.GenerateResource.Cache
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.exe
+C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.pdb
