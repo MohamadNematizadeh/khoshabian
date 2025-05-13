@@ -7,3 +7,12 @@ C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\De
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.csproj.GenerateResource.Cache
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.exe
 C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainHall\MainHall\obj\Debug\MainHall.pdb
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\bin\Debug\MainHall.exe.config
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\obj\Debug\MainHall.exe
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\obj\Debug\MainHall.pdb
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\bin\Debug\MainHall.exe
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\bin\Debug\MainHall.pdb
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\obj\Debug\MainHall.csprojResolveAssemblyReference.cache
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\obj\Debug\MainHall.Form1.resources
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\obj\Debug\MainHall.Properties.Resources.resources
+D:\Programmer\C# Course\khoshabian\MainHall\MainHall\obj\Debug\MainHall.csproj.GenerateResource.Cache

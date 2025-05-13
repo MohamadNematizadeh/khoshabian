@@ -1,9 +1,0 @@
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\bin\Debug\Unit1.exe.config
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\bin\Debug\Unit1.exe
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\bin\Debug\Unit1.pdb
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\obj\Debug\Unit1.csprojResolveAssemblyReference.cache
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\obj\Debug\Unit1.Form1.resources
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\obj\Debug\Unit1.Properties.Resources.resources
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\obj\Debug\Unit1.csproj.GenerateResource.Cache
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\obj\Debug\Unit1.exe
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\Unit1\Unit1\obj\Debug\Unit1.pdb

@@ -1,9 +1,0 @@
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\bin\Debug\MainUnit.exe.config
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\bin\Debug\MainUnit.exe
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\bin\Debug\MainUnit.pdb
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\obj\Debug\MainUnit.Form1.resources
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\obj\Debug\MainUnit.Properties.Resources.resources
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\obj\Debug\MainUnit.csproj.GenerateResource.Cache
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\obj\Debug\MainUnit.exe
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\obj\Debug\MainUnit.pdb
-C:\Users\DecaTeam\Documents\Visual Studio 2012\Projects\MainUnit\MainUnit\obj\Debug\MainUnit.csprojResolveAssemblyReference.cache

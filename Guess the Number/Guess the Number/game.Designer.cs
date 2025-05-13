@@ -40,9 +40,9 @@
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button_check = new System.Windows.Forms.Button();
+            this.button_help = new System.Windows.Forms.Button();
+            this.button_exit = new System.Windows.Forms.Button();
             this.text_label = new System.Windows.Forms.Label();
             this.help_label = new System.Windows.Forms.Label();
             this.score_label = new System.Windows.Forms.Label();
@@ -225,52 +225,52 @@
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // button_check
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(36)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(84, 457);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 59);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Check";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button_check.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(36)))));
+            this.button_check.FlatAppearance.BorderSize = 0;
+            this.button_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_check.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_check.ForeColor = System.Drawing.Color.White;
+            this.button_check.Location = new System.Drawing.Point(84, 457);
+            this.button_check.Margin = new System.Windows.Forms.Padding(4);
+            this.button_check.Name = "button_check";
+            this.button_check.Size = new System.Drawing.Size(212, 59);
+            this.button_check.TabIndex = 24;
+            this.button_check.Text = "Check";
+            this.button_check.UseVisualStyleBackColor = false;
+            this.button_check.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button_help
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(122)))), ((int)(((byte)(37)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(232, 323);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(64, 59);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "Help";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button_help.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(122)))), ((int)(((byte)(37)))));
+            this.button_help.FlatAppearance.BorderSize = 0;
+            this.button_help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_help.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button_help.ForeColor = System.Drawing.Color.White;
+            this.button_help.Location = new System.Drawing.Point(232, 323);
+            this.button_help.Margin = new System.Windows.Forms.Padding(4);
+            this.button_help.Name = "button_help";
+            this.button_help.Size = new System.Drawing.Size(64, 59);
+            this.button_help.TabIndex = 25;
+            this.button_help.Text = "Help";
+            this.button_help.UseVisualStyleBackColor = false;
+            this.button_help.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // button_exit
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(122)))), ((int)(((byte)(37)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(232, 390);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(64, 59);
-            this.button4.TabIndex = 26;
-            this.button4.Text = "Exit";
-            this.button4.UseVisualStyleBackColor = false;
+            this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(122)))), ((int)(((byte)(37)))));
+            this.button_exit.FlatAppearance.BorderSize = 0;
+            this.button_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_exit.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button_exit.ForeColor = System.Drawing.Color.White;
+            this.button_exit.Location = new System.Drawing.Point(232, 390);
+            this.button_exit.Margin = new System.Windows.Forms.Padding(4);
+            this.button_exit.Name = "button_exit";
+            this.button_exit.Size = new System.Drawing.Size(64, 59);
+            this.button_exit.TabIndex = 26;
+            this.button_exit.Text = "Exit";
+            this.button_exit.UseVisualStyleBackColor = false;
             // 
             // text_label
             // 
@@ -312,9 +312,9 @@
             this.Controls.Add(this.score_label);
             this.Controls.Add(this.help_label);
             this.Controls.Add(this.text_label);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_exit);
+            this.Controls.Add(this.button_help);
+            this.Controls.Add(this.button_check);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btn0);
             this.Controls.Add(this.btn9);
@@ -350,9 +350,9 @@
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button_check;
+        private System.Windows.Forms.Button button_help;
+        private System.Windows.Forms.Button button_exit;
         private System.Windows.Forms.Label text_label;
         private System.Windows.Forms.Label help_label;
         private System.Windows.Forms.Label score_label;

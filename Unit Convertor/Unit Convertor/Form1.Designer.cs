@@ -37,6 +37,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button2
@@ -66,7 +67,7 @@
             this.cmbUnitSelection.Name = "cmbUnitSelection";
             this.cmbUnitSelection.Size = new System.Drawing.Size(248, 24);
             this.cmbUnitSelection.TabIndex = 8;
-            this.cmbUnitSelection.SelectedIndexChanged += new System.EventHandler(this.cmbUnitSelection_SelectedIndexChanged);
+            this.cmbUnitSelection.SelectedIndexChanged += new System.EventHandler(this.cmbUnitSelection_SelectedIndexChanged_1);
             // 
             // label1
             // 
@@ -154,13 +155,27 @@
             this.comboBox3.Size = new System.Drawing.Size(248, 24);
             this.comboBox3.TabIndex = 14;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(154, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(168, 36);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "تبدیل واحد";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(453, 484);
+            this.ClientSize = new System.Drawing.Size(465, 396);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label3);
@@ -190,6 +205,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Button button1;
 
         
 

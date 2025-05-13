@@ -26,6 +26,7 @@ namespace Guess_the_Number
             btn8.Click += NumberButton_Click;
             btn9.Click += NumberButton_Click;
         }
+
         int computerrandom = 0;
         int score = 5;  
         int attempts = 0; 
@@ -40,7 +41,7 @@ namespace Guess_the_Number
         }
 
 
- 
+
         private void button2_Click(object sender, EventArgs e)
         {
             if (computerrandom == 0)
@@ -129,5 +130,7 @@ namespace Guess_the_Number
         {
             score_label.Text = "امتیاز:" + score.ToString();
         }
+
+    
     }
 }
